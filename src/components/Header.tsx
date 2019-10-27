@@ -7,7 +7,7 @@ type HeaderProps = {
 
 const Header: React.FC<HeaderProps> = ({ title, authors }) => (
     <div style={{
-        paddingTop: "2em",
+        paddingTop: "4em",
         paddingLeft: "0.5em",
         paddingRight: "0.5em",
         minWidth: "90vw",

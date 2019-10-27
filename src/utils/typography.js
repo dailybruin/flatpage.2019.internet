@@ -6,7 +6,7 @@ const typography = new Typography({
   googleFonts: [
     {
       name: 'Oswald',
-      styles: ['700'],
+      styles: ['500', '700'],
     },
   ],
   headerFontFamily: ['Oswald', 'sans-serif'],
