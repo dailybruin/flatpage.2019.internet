@@ -3,14 +3,15 @@ import { graphql } from 'gatsby'
 import {
   Article,
   Footer,
-  Head
-} from '@dailybruin/lux'
-import Landing from "../components/Landing";
+  Head,
+} from '@dailybruin/lux';
 import colors from '../utils/colors';
 import Header from '../components/Header';
 import KBMouse from "../components/KBMouse";
 import Timeline from '../components/Timeline';
 import { css } from 'emotion';
+import Subheading from '../components/Subheading';
+import PullQuote from "../components/Pullquote";
 
 export const query = graphql`
   query {
@@ -49,9 +50,8 @@ const Wrapper = ({ children }) => (
 const IndexPage = ({ data }) => (
   <>
     <Head {...data.site.siteMetadata} />
-    <Landing imageURL={data.kerckhoffArticle.coverImg} />
     <Wrapper>
-      <Header title="The Internet Is Cool" authors="This Person" />
+      <Header title={data.kerckhoffArticle.headline} authors={data.kerckhoffArticle.author} />
       <KBMouse />
       <h2 className={css`
         text-transform: uppercase;
@@ -63,7 +63,10 @@ const IndexPage = ({ data }) => (
       `}>Timeline</h2>
       <p>Description for timeline goes here</p>
       <Timeline />
-      <Article content={data.kerckhoffArticle.content} />
+      <Article content={data.kerckhoffArticle.content} customTypeComponentMapping={{
+        subheading: Subheading,
+        pullquote: PullQuote
+      }} />
       <Footer developers="Dustin Newman (Developer), Lauren Ho (Designer)" copyrightYear={2019} />
     </Wrapper>
   </>

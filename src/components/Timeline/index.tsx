@@ -27,7 +27,7 @@ const Timeline = () => {
             overflow-x: scroll;
         `}>
                 {events.map((e, i) => (
-                    <div key={e.year} className="timeline-item">
+                    <div key={e.year} className={`timeline-item ${e.year == "1900s" && "timeline-item-old"}`}>
                         <div className={css`
                         background-color: ${i % 2 == 0 ? "white" : colors.bg};
                         color: ${i % 2 == 0 ? colors.bg : "white"};
