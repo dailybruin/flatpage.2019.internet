@@ -62,11 +62,11 @@ const IndexPage = ({ data }) => (
         font-weight: 500;
       `}>Timeline</h2>
       <p>Description for timeline goes here</p>
-      <Timeline />
       <Article content={data.kerckhoffArticle.content} customTypeComponentMapping={{
         subheading: Subheading,
         pullquote: PullQuote
       }} />
+      <Timeline />
       <Footer developers="Dustin Newman (Developer), Lauren Ho (Designer)" copyrightYear={2019} />
     </Wrapper>
   </>

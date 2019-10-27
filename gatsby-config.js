@@ -16,18 +16,6 @@ module.exports = {
     image,
   },
   plugins: [
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: siteName,
-        short_name: siteName,
-        start_url: '/',
-        background_color: '#ffffff',
-        theme_color: '#ffffff',
-        display: 'browser',
-        icon: 'src/images/db-logo.png',
-      },
-    },
     'gatsby-plugin-typescript',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-emotion',
