@@ -1,26 +1,8 @@
 import React, { useState } from "react";
 import { css } from "emotion";
 import colors from "../../utils/colors";
+import events from "./events.json";
 import "./style.css";
-
-const events = [
-    {
-        year: 1979,
-        description: "idk something"
-    },
-    {
-        year: 1980,
-        description: "Eggert turned 100"
-    },
-    {
-        year: 1989,
-        description: "God was born"
-    },
-    {
-        year: 1998,
-        description: "me was born"
-    }
-];
 
 const NullText = "Scroll and click on a year below to see what happened with the Internet that year."
 

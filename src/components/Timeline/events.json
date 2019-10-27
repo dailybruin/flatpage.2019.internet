@@ -1,0 +1,30 @@
+[
+    {
+        "year": "1900s",
+        "description": "Nikola Tesla brought about the idea of a “world wireless system”, conducting experiments with wireless transmission in his Colorado lab."
+    },
+    {
+        "year": "1930s",
+        "description": "Belgain entrepreneur Paul Otlet envisioned a scheme to access data through a network of “electric telescope” which would even support audio output, data sharing, and social interaction."
+    },
+    {
+        "year": "1940s",
+        "description": "Vannevar Bush, an American inventor, discussed “memex”, a theoretical machine, which could enable users to store and retrieve documents, in “As We May Think” a 1945 essay publiished in the Atlantic."
+    },
+    {
+        "year": "1960s",
+        "description": "MIT’s J.C.R Licklider brought about the idea of an “Intergalactic Network” of computer systems. Shortly afterwards, computer scientists developed packet switching, a method of data transmission which became a cornerstone of the internet. \n\n The first workable prototype of the internet came in the late 1960s – the Advanced Research Projects Agency Network or ARPANET. This was funded by the U.S. Department of Defense and had multiple computers communicating on a single network."
+    },
+    {
+        "year": "1970s",
+        "description": "ARPANET’s technology grew, more so after scientists Robert Kahn and Vinton Cerf developed TCP/IP, which set standards for data transmission between networks."
+    },
+    {
+        "year": "1980s",
+        "description": "ARPANET adopted TCP/IP on January 1, 1983. From this stemmed the assembly of the modern Internet as we know it today."
+    },
+    {
+        "year": "1990s",
+        "description": "Computer scientist Tim Berners-Lee invented the World Wide Web. The WWW isn’t the Internet itself, however, it’s just the medium used to access data through websites and hyperlinks. Nevertheless, it helped bring the internet to the average user and is the reason why we can now scroll through endlessly every day."
+    }
+]
