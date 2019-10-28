@@ -53,6 +53,10 @@ const IndexPage = ({ data }) => (
     <Wrapper>
       <Header title={data.kerckhoffArticle.headline} authors={data.kerckhoffArticle.author} />
       <KBMouse />
+      <Article content={data.kerckhoffArticle.content} customTypeComponentMapping={{
+        subheading: Subheading,
+        pullquote: PullQuote
+      }} />
       <h2 className={css`
         text-transform: uppercase;
         background-color: ${colors.blue.dark};
@@ -62,10 +66,6 @@ const IndexPage = ({ data }) => (
         font-weight: 500;
       `}>Timeline</h2>
       <p>Description for timeline goes here</p>
-      <Article content={data.kerckhoffArticle.content} customTypeComponentMapping={{
-        subheading: Subheading,
-        pullquote: PullQuote
-      }} />
       <Timeline />
       <Footer developers="Dustin Newman (Developer), Lauren Ho (Designer)" copyrightYear={2019} />
     </Wrapper>
