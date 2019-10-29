@@ -11,6 +11,10 @@
   flex: 1 0 70%;
 }
 
+.timeline-1940s {
+  margin-right: 8em;
+}
+
 .timeline-item::after {
   content: "";
   position: absolute;

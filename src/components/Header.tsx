@@ -11,6 +11,7 @@ const Header: React.FC<HeaderProps> = ({ title, authors }) => (
         paddingLeft: "0.5em",
         paddingRight: "0.5em",
         minWidth: "90vw",
+        maxWidth: "1000px",
         textAlign: "center"
     }}>
         <h1 style={{

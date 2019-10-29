@@ -1,10 +1,10 @@
 const slugify = require('slugify')
 
-const siteName = 'SITE_NAME'
-const description = 'SITE_DESCRIPTION'
+const siteName = 'Birthplace of the Internet | Daily Bruin'
+const description = 'On Oct. 29, 1969, UCLA graduate researcher Charley Kline sent the data transmission “LO” and launched the internet age.'
 const image =
-  'https://chancellor.ucla.edu/wp-content/uploads/2018/07/ChancellorBlock_1366x912_acf_cropped.jpg'
-const year = 'CURRENT_YEAR'
+  'https://assets.dailybruin.com/images/flatpage.2019.internet/internet.XZ.7-80b1b2501caaedf271b5c9574b0a54e9.jpg'
+const year = '2019'
 
 const url = `https://features.dailybruin.com/${year}/${slugify(siteName)}`
 

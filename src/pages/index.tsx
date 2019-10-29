@@ -47,6 +47,23 @@ const Wrapper = ({ children }) => (
   </div>
 );
 
+const TimelineIntro = () => (
+  <>
+    <h2 className={css`
+          text-transform: uppercase;
+          background-color: ${colors.blue.dark};
+          color: white;
+          padding: 0.5em;
+          font-size: 2em;
+          font-weight: 500;
+        `}>Timeline</h2>
+    <p className={css`
+      text-align: center;
+      max-width: 500px;
+    `}>Oct. 29, 1969 marked the first data transmission relayed across a computer network by researchers working under Leonard Kleinrock in Boelter Hall. But when was the internet first conceptualized, and how did it get to what it is today?</p>
+  </>
+)
+
 const IndexPage = ({ data }) => (
   <>
     <Head {...data.site.siteMetadata} />
@@ -57,15 +74,7 @@ const IndexPage = ({ data }) => (
         subheading: Subheading,
         pullquote: PullQuote
       }} />
-      <h2 className={css`
-        text-transform: uppercase;
-        background-color: ${colors.blue.dark};
-        color: white;
-        padding: 0.5em;
-        font-size: 2em;
-        font-weight: 500;
-      `}>Timeline</h2>
-      <p>Description for timeline goes here</p>
+      <TimelineIntro />
       <Timeline />
       <Footer developers="Dustin Newman (Developer), Lauren Ho (Designer)" copyrightYear={2019} />
     </Wrapper>
