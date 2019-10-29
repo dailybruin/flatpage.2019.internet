@@ -12,6 +12,7 @@ import Timeline from '../components/Timeline';
 import { css } from 'emotion';
 import Subheading from '../components/Subheading';
 import PullQuote from "../components/Pullquote";
+import "./style.css";
 
 export const query = graphql`
   query {
@@ -62,7 +63,7 @@ const TimelineIntro = () => (
       max-width: 500px;
     `}>Oct. 29, 1969 marked the first data transmission relayed across a computer network by researchers working under Leonard Kleinrock in Boelter Hall. But when was the internet first conceptualized, and how did it get to what it is today?</p>
   </>
-)
+);
 
 const IndexPage = ({ data }) => (
   <>

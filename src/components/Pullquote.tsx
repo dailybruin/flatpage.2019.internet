@@ -3,7 +3,8 @@ import { css } from 'emotion';
 import { mobile } from '../utils/mediaQueries';
 
 export interface PQProps {
-    text: string
+    text: string;
+    credit: string;
 }
 
 export default function CustomPullQuote(props: PQProps) {
@@ -32,7 +33,7 @@ export default function CustomPullQuote(props: PQProps) {
             </div>
             <p className={css`
                 font-size: 1em;
-            `}>- Professor Korf</p>
+            `}>- {props.credit}</p>
         </div>
     )
 }
