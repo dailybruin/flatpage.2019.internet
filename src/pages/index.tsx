@@ -71,12 +71,12 @@ const IndexPage = ({ data }) => (
     <Wrapper>
       <Header title={data.kerckhoffArticle.headline} authors={data.kerckhoffArticle.author} />
       <KBMouse />
+      <TimelineIntro />
+      <Timeline />
       <Article content={data.kerckhoffArticle.content} customTypeComponentMapping={{
         subheading: Subheading,
         pullquote: PullQuote
       }} />
-      <TimelineIntro />
-      <Timeline />
       <Footer developers="Dustin Newman (Developer), Lauren Ho (Designer)" copyrightYear={2019} />
     </Wrapper>
   </>
