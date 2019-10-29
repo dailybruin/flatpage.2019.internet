@@ -1,14 +1,13 @@
-const slugify = require('slugify')
-
 const siteName = 'Happy Birthday to the Internet | Daily Bruin'
 const description = 'On Oct. 29, 1969, UCLA graduate researcher Charley Kline sent the data transmission “LO” and launched the internet age.'
-const image =
-  'https://assets.dailybruin.com/images/flatpage.2019.internet/internet.XZ.7-80b1b2501caaedf271b5c9574b0a54e9.jpg'
-const year = '2019'
+const image = "https://assets.dailybruin.com/images/flatpage.2019.internet/internet.XZ.7-80b1b2501caaedf271b5c9574b0a54e9.jpg";
+const year = '2019';
+const prefixPath = `/${year}/happy-birthday-internet`;
 
-const url = `https://features.dailybruin.com/${year}/happy-birthday-internet`
+const url = `https://features.dailybruin.com${prefixPath}/`;
 
 module.exports = {
+  pathPrefix: prefixPath,
   siteMetadata: {
     siteName,
     description,
